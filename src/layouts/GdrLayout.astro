@@ -1,13 +1,19 @@
 ---
+import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
+type Props = CollectionEntry<'gdr'>['data'];
+
+const { titolo, autorePrincipale } = Astro.props;
+
+const description : string =  `scheda di ${titolo}`;
 ---
 
 <html lang="en">
 	<head>
-		<BaseHead title='About' description='What is this madness?' />
+		<BaseHead title={titolo} description={description} />
 		<style>
 			main {
 				width: calc(100% - 2em);
@@ -55,10 +61,11 @@ import Footer from '../components/Footer.astro';
 			<article>
 				<div class="prose">
 					<div class="title">
-						<p>Questo mini sito esiste per memare Biri che si è laureata ed è bella!</p>
-						<p><i>Birpi! Magico Birpi! Stupendo Birpi! lalalala lallalalà!</i></p>
-						<p><i>Birpi Fantastica! Birpi un po' magica! Birpi gloriosa è!</i></p>
-						<p><i>Birpi Birpi Birpi!</i></p>
+						<h1>{titolo}</h1>
+						<hr />
+					</div>
+					<div class="title">
+						<p><b>Autore Principale</b>: {autorePrincipale}</p>
 						<hr />
 					</div>
 				</div>
