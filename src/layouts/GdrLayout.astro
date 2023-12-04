@@ -6,7 +6,29 @@ import Footer from '../components/Footer.astro';
 
 type Props = CollectionEntry<'gdr'>['data'];
 
-const { titolo, autorePrincipale } = Astro.props;
+const { 
+	livelloBibliografico,
+	tipoDiDocumento,
+	titolo, 
+	autorePrincipale, 
+	pubblicazione, 
+	descrizioneFisica, 
+	titoloDiOpera, 
+	soggetti,
+	sistemaDiGioco,
+	ambientazione, 
+	giocoAdattoA, 
+	gradoDiPreparazione, 
+	master, 
+	numeroDiGiocatoriMAX, 
+	numeroDiGiocatoriMIN,
+	etaConsigliata,
+	linguaDiPubblicazione,
+	linguaOperaOriginale,
+	paeseDiPubblicazione,
+	codiceIdentificativo,
+	regaloDiVanessa
+} = Astro.props;
 
 const description : string =  `scheda di ${titolo}`;
 ---
@@ -20,20 +42,11 @@ const description : string =  `scheda di ${titolo}`;
 				max-width: 100%;
 				margin: 0;
 			}
-			.hero-image {
-				width: 100%;
-			}
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
-			}
 			.prose {
 				width: 720px;
 				max-width: calc(100% - 2em);
 				margin: auto;
-				padding: 1em;
+				padding : 0.5em;
 				color: rgb(var(--gray-dark));
 			}
 			.title {
@@ -60,12 +73,31 @@ const description : string =  `scheda di ${titolo}`;
 		<main>
 			<article>
 				<div class="prose">
-					<div class="title">
+					<div class="title capitalize">
 						<h1>{titolo}</h1>
 						<hr />
 					</div>
-					<div class="title">
+					<div class="text-base grid grid-cols-2 gap-x-2 justify-center">
+						<p><b>Livello Bibliografico</b>: {livelloBibliografico}</p>
+						<p><b>Tipo di Documento</b>: {tipoDiDocumento}</p>
 						<p><b>Autore Principale</b>: {autorePrincipale}</p>
+						<p><b>Titolo</b>: {titolo}</p>
+						<p><b>Pubblicazione</b>: {pubblicazione}</p>
+						<p><b>Descrizione Fisica</b>: {descrizioneFisica}</p>
+						<p><b>Titolo di Opera</b>: {titoloDiOpera}</p>
+						<p><b>Soggetti</b>: {soggetti}</p>
+						<p><b>Sistema di Gioco</b>: {sistemaDiGioco}</p>
+						<p><b>Ambientazione</b>: {ambientazione }</p>
+						<p><b>Gioco adatto a</b>: {giocoAdattoA}</p>
+						<p><b>Grado di Preparazione</b>: {gradoDiPreparazione}</p>
+						<p><b>Master</b>: {master ? 'Sì' : 'No'}</p>
+						<p><b>Numero di Giocatori</b>: da {numeroDiGiocatoriMIN} a {numeroDiGiocatoriMAX}</p>
+						<p><b>Età Consigliata</b>: {etaConsigliata}</p>
+						<p><b>Lingua di Pubblicazione</b>: {linguaDiPubblicazione}</p>
+						<p><b>Paese di Pubblicazione</b>: {paeseDiPubblicazione}</p>
+						<p><b>Lingua Opera Originale</b>: {linguaOperaOriginale}</p>
+						<p><b>Codice Identificativo</b>: {codiceIdentificativo}</p>
+						<p><b>Regalo per Piri</b>: {regaloDiVanessa ? 'Sì' : 'No'}</p>
 						<hr />
 					</div>
 				</div>

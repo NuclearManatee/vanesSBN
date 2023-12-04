@@ -20,6 +20,8 @@ export default function Search(){
             schema : {
                 titolo : 'string',
                 autorePrincipale : 'string',
+                codiceIdentificativo: 'string',
+                ambientazione : 'string',
                 slug : 'string'
             }
         });
@@ -29,6 +31,8 @@ export default function Search(){
                 return {
                     titolo :item.data.titolo,
                     autorePrincipale : item.data.autorePrincipale,
+                    codiceIdentificativo: item.data.codiceIdentificativo,
+                    ambientazione : item.data.ambientazione,
                     slug : item.slug
                 }
             }
@@ -78,6 +82,7 @@ export default function Search(){
                                 <div key={index} className="block w-full text-base font-medium mt-2 p-4 border rounded-lg border-gray-300 hover:bg-blue-700 hover:text-white">
                                     <p><b>Titolo</b>: {item.document.titolo}</p>
                                     <p><b>Autore</b>: {item.document.autorePrincipale}</p>
+                                    <p><b>Codice Identificativo</b>: {item.document.codiceIdentificativo}</p>
                                 </div>
                             </a>
                         )
