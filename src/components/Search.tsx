@@ -19,7 +19,8 @@ export default function Search(){
         const db = await create({
             schema : {
                 titolo : 'string',
-                autorePrincipale : 'string'
+                autorePrincipale : 'string',
+                slug : 'string'
             }
         });
 
@@ -27,7 +28,8 @@ export default function Search(){
             (item) => {
                 return {
                     titolo :item.data.titolo,
-                    autorePrincipale : item.data.autorePrincipale
+                    autorePrincipale : item.data.autorePrincipale,
+                    slug : item.slug
                 }
             }
         )
@@ -72,10 +74,12 @@ export default function Search(){
                 {result.map(
                     (item,index) => {
                         return (
-                            <div key={index} className="block w-full text-base font-medium mt-2 p-4 border rounded-lg border-gray-300">
-                                <p><b>Titolo</b>: {item.document.titolo}</p>
-                                <p><b>Autore</b>: {item.document.autorePrincipale}</p>
-                            </div>
+                            <a className="no-underline text-black" href={`/gdr/${item.document.slug}/`} >
+                                <div key={index} className="block w-full text-base font-medium mt-2 p-4 border rounded-lg border-gray-300 hover:bg-blue-700 hover:text-white">
+                                    <p><b>Titolo</b>: {item.document.titolo}</p>
+                                    <p><b>Autore</b>: {item.document.autorePrincipale}</p>
+                                </div>
+                            </a>
                         )
                     }
                 )}
