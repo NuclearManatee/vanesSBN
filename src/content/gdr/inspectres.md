@@ -5,7 +5,7 @@ tipoDiDocumento: Testo
 autorePrincipale: Sorensen, Jared
 pubblicazione: "New York (NY, USA) : Memento Mori Theatrics, 2002"
 descrizioneFisica: "80p. : ill., b/n ; 27 cm."
-titoloDiOpera: Torchbearer
+titoloDiOpera: InSpectres
 soggetti: Giochi di Ruolo
 sistemaDiGioco: Burning Wheel
 ambientazione: fantasy
