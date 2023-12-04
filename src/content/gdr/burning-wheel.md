@@ -18,5 +18,6 @@ etaConsigliata : '14+'
 linguaDiPubblicazione : 'inglese' 
 linguaOperaOriginale: 'inglese' 
 paeseDiPubblicazione: 'USA' 
-codiceIdentificativo : 'US\ICCU\RTI\GHQ1600' 
+codiceIdentificativo : 'US\ICCU\RTI\GHQ1600'
+regaloDiVanessa : false
 ---
