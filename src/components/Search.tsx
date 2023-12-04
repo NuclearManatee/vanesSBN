@@ -42,8 +42,7 @@ export default function Search(){
 
         const searchResult = await search(db,{
             term : searchInput,
-            tolerance: 1,
-            threshold: 1
+            tolerance: 1
         })
 
         if(searchResult.count > 0){
