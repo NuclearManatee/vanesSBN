@@ -9,7 +9,7 @@ titoloDiOpera : 'The King is Dead'
 soggetti : 'Giochi di ruolo' 
 sistemaDiGioco : 'firebrands' 
 ambientazione : 'fantasy' 
-giocoAdattoA : 'one shot ' 
+giocoAdattoA : 'One Shot' 
 gradoDiPreparazione : 'basso' 
 master : false 
 numeroDiGiocatoriMIN : 3
@@ -18,5 +18,6 @@ etaConsigliata : '14+'
 linguaDiPubblicazione : 'italiano' 
 linguaOperaOriginale: 'inglese' 
 paeseDiPubblicazione: 'Italia' 
-codiceIdentificativo : Edohelp' 
+codiceIdentificativo : Edohelp'
+regaloDiVanessa : false
 ---
