@@ -22,6 +22,7 @@ export default defineConfig({
             label : 'Giochi di Ruolo',
             folder : 'src/content/gdr',
             create : true,
+            identifier_field : 'titolo', 
             fields: [
               { name : 'titolo', widget : 'string', label: 'Titolo' },  
               { name : 'livelloBibliografico', widget : 'string', label: 'Livello Bibliografico' },
