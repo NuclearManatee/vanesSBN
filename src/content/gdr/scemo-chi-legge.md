@@ -1,23 +1,23 @@
 ---
-titolo: scemo chi legge
-livelloBibliografico: scemo chi legge
-tipoDiDocumento: scemo chi legge
-autorePrincipale: scemo chi legge
-pubblicazione: scemo chi legge
-descrizioneFisica: scemo chi legge
-titoloDiOpera: scemo chi legge
-soggetti: scemo chi legge
-sistemaDiGioco: scemo chi legge
-ambientazione: scemo chi legge
-giocoAdattoA: One Shot
-gradoDiPreparazione: nullo
-master: false
-numeroDiGiocatoriMIN: 1
-numeroDiGiocatoriMAX: 7
-etaConsigliata: basta saper leggere
-linguaDiPubblicazione: italiano
-linguaOperaOriginale: tutte
-paeseDiPubblicazione: tutti
-codiceIdentificativo: scemo chi legge
+titolo: Il richiamo di Edo
+livelloBibliografico: Monografia cosmica
+tipoDiDocumento: Pergamena del Mar Morto
+autorePrincipale: Piri
+pubblicazione: Miskatonic University
+descrizioneFisica: Non euclideo
+titoloDiOpera: Il richiamo di Edo
+soggetti: Lovecraft, persone impossibili, non euclideo
+sistemaDiGioco: Dungeons & The Apocalypse
+ambientazione: Pavia
+giocoAdattoA: Campagne Lunghe
+gradoDiPreparazione: alto
+master: true
+numeroDiGiocatoriMIN: 2
+numeroDiGiocatoriMAX: 99
+etaConsigliata: 18-55
+linguaDiPubblicazione: Chtulhuiano
+linguaOperaOriginale: Chtulhuiano
+paeseDiPubblicazione: R'lyeh
+codiceIdentificativo: "4567743"
 regaloDiVanessa: true
 ---
