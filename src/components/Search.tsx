@@ -22,6 +22,9 @@ export default function Search(){
                 autorePrincipale : 'string',
                 codiceIdentificativo: 'string',
                 ambientazione : 'string',
+                sistemaDiGioco : 'string',
+                giocoAdattoA : 'string',
+                gradoDiPreparazione : 'string',
                 slug : 'string'
             }
         });
@@ -33,6 +36,9 @@ export default function Search(){
                     autorePrincipale : item.data.autorePrincipale,
                     codiceIdentificativo: item.data.codiceIdentificativo,
                     ambientazione : item.data.ambientazione,
+                    sistemaDiGioco : item.data.sistemaDiGioco,
+                    giocoAdattoA : item.data.giocoAdattoA,
+                    gradoDiPreparazione : item.data.gradoDiPreparazione,
                     slug : item.slug
                 }
             }

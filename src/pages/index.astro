@@ -11,9 +11,9 @@ import Search from '../components/Search';
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body>
+	<body class="min-h-screen flex flex-col ">
 		<Header title={SITE_TITLE} />
-		<main>
+		<main >
 			<Search client:load />
 		</main>
 		<Footer />
