@@ -1,5 +1,5 @@
 ---
-titolo: Once more into the vois
+titolo: Once more into the void
 livelloBibliografico: "Monografia "
 tipoDiDocumento: Testo
 autorePrincipale: Jason Pitre

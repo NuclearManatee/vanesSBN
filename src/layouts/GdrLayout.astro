@@ -26,8 +26,7 @@ const {
 	linguaDiPubblicazione,
 	linguaOperaOriginale,
 	paeseDiPubblicazione,
-	codiceIdentificativo,
-	regaloDiVanessa
+	codiceIdentificativo
 } = Astro.props;
 
 const description : string =  `scheda di ${titolo}`;
@@ -97,7 +96,6 @@ const description : string =  `scheda di ${titolo}`;
 						<p><b>Paese di Pubblicazione</b>: {paeseDiPubblicazione}</p>
 						<p><b>Lingua Opera Originale</b>: {linguaOperaOriginale}</p>
 						<p><b>Codice Identificativo</b>: {codiceIdentificativo}</p>
-						<p><b>Regalo per Piri</b>: {regaloDiVanessa ? 'Sì' : 'No'}</p>
 						<hr />
 					</div>
 				</div>

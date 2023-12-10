@@ -66,14 +66,16 @@ const gdr = await getCollection('gdr');
 		<Header />
 		<main>
 			<section>
-				<ul>
+				<ul class="flex flex-col flex-col-2 ">
 					{
 						gdr.map((post) => (
-							<li>
-								<a href={`/gdr/${post.slug}/`}>
-									<h4 class="title capitalize">{post.data.titolo}</h4>
-								</a>
+						<a class="no-underline" href={`/gdr/${post.slug}/`}>
+							<li class="block w-full text-base font-medium mt-2 p-4 border rounded-lg border-gray-300 hover:bg-blue-700 hover:text-white">	
+									<p><b>Titolo</b>: {post.data.titolo}</p>
+                                    <p><b>Autore</b>: {post.data.autorePrincipale}</p>
+                                    <p><b>Codice Identificativo</b>: {post.data.codiceIdentificativo}</p>
 							</li>
+						</a>
 						))
 					}
 				</ul>

@@ -2,7 +2,7 @@
 titolo: 10 CANDLES
 livelloBibliografico: moografia
 tipoDiDocumento: testo infiammabile
-autorePrincipale: ma si dai, quello lì
+autorePrincipale: CAVALRY GAMES
 pubblicazione: bella
 descrizioneFisica: ad avercela, ho mandato i soldi ed è sparita
 titoloDiOpera: non ho capito la domanda
@@ -18,6 +18,6 @@ etaConsigliata: abbastanza da non credere più a babbo natalae
 linguaDiPubblicazione: ENG
 linguaOperaOriginale: sempre ENG
 paeseDiPubblicazione: ancora ENG
-codiceIdentificativo: fffffffffffffth
+codiceIdentificativo: XXXX
 regaloDiVanessa: true
 ---
